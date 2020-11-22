@@ -1,0 +1,46 @@
+:root {
+  --color-1: #197daa;
+  --color-2: #4e9bbd;
+  --color-3: #95bace;
+  --color-4: #ffffff;
+  --color-4-hover: #c4c2c2;
+  --color-5: #197ba963;
+  --color-6: hsla(199, 74%, 38%, 0.14);
+}
+
+$bp--1440: 90em;
+$bp--1024: 64em;
+$bp--768: 48em;
+$bp--640: 40em;
+$bp--425: 26.57em;
+$bp--375: 23.44em;
+$bp--320: 20em;
+// @media only screen and (max-width: $bp--425) {}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (max-width: $bp--1024) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: $bp--768) {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  position: relative;
+}
